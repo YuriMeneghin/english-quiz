@@ -2,16 +2,30 @@
     <string name="app_name">InsideOutQuizUI</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="question1">What do You do when You step on a dog\'s poop? </string>
-    <string name="q1_answer1">You think it\'s your lucky day</string>
-    <string name="q1_answer2">You get angry</string>
-    <string name="q1_answer3">stocazzo</string>
-    <string name="q1_answer4">ciao</string>
+    <string name="question1">What do You do when You get a bad note at School?</string>
+    <string name="q1_answer1">I take it as a challenge and try again</string>
+    <string name="q1_answer2">I get angry</string>
+    <string name="q1_answer3">I cry </string>
+    <string name="q1_answer4">I satrt thinking you are not good
+        enaugh</string>
 
-    <string name="question2">What is the largest planet in our solar system?</string>
-    <string name="q2_answer1">Jupiter</string>
-    <string name="q2_answer2">mars</string>
-    <string name="q2_answer3">mercury</string>
-    <string name="q2_answer4">giova</string>
+    <string name="question2">How do You act when your favourite football team scores?</string>
+    <string name="q2_answer1">I get so happy I\'ll jump </string>
+    <string name="q2_answer2">I start breaking averything inside the room</string>
+    <string name="q2_answer3">I turn worried that the opponents could score back</string>
+    <string name="q2_answer4">No reaction</string>
+
+    <string name="question3">How do You behave when You don\'t like a dish?</string>
+    <string name="q3_answer1">I throw the plate trhough the whall </string>
+    <string name="q3_answer2">I start thinking about how can it be patched</string>
+    <string name="q3_answer3">I start mugging</string>
+    <string name="q3_answer4">I get scared about getting sick</string>
+
+
+    <string name="Rage_result"> You Are Rage!</string>>
+    <string name="Happyness_result"> You Are Happyness!</string>
+    <string name="Sadness_result"> You Are Sadness!</string>
+    <string name="Fear_result"> You Are Fear!</string>
+    <string name="Disgust_result"> You Are Disgust!</string>
 
 </resources>
