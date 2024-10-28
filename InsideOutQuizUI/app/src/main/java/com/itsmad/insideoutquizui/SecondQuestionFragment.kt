@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.itsmad.insideoutquizui.databinding.FragmentFirstQuestionBinding
 
-class FirstQuestionFragment : Fragment() {
+class SecondQuestionFragment : Fragment() {
     // ... altre variabili ...
 
     private var _binding: FragmentFirstQuestionBinding? = null
@@ -44,19 +44,19 @@ class FirstQuestionFragment : Fragment() {
 
     //metodi per salvare le risposte
     private fun checkAnswer1() {
-        AppRepository.q1_answer1 = true
+        AppRepository.q2_answer1 = true
     }
 
     private fun checkAnswer2() {
-        AppRepository.q1_answer2 = true
+        AppRepository.q2_answer2 = true
     }
 
     private fun checkAnswer3() {
-        AppRepository.q1_answer3 = true
+        AppRepository.q2_answer3 = true
     }
 
     private fun checkAnswer4() {
-        AppRepository.q1_answer4 = true
+        AppRepository.q2_answer4 = true
     }
 
     override fun onDestroyView() {

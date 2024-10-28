@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstQuestionFragment"
+    tools:context=".SecondQuestionFragment"
     android:background="@drawable/backgroud">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
             android:background="#80FF0000"
             android:gravity="center"
             android:paddingVertical="30dp"
-            android:text="@string/question1"
+            android:text="@string/question2"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -43,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q1_answer1" />
+                android:text="@string/q2_answer1"
+                />
 
             <Button
                 android:id="@+id/answer2"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q1_answer2" />
+                android:text="@string/q2_answer2" />
 
             <Button
                 android:id="@+id/answer3"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q1_answer3" />
+                android:text="@string/q2_answer3" />
 
             <Button
                 android:id="@+id/answer4"
@@ -67,20 +67,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q1_answer4" />
+                android:text="@string/q2_answer4" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/ciao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:background="@drawable/rounded_button_background"
-            android:text="Prossima domanda"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
