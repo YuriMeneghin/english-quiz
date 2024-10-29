@@ -1,28 +1,38 @@
 package com.itsmad.insideoutquizui
 
+import FirstQuestionFragment
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.itsmad.insideoutquizui.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private var _binding: MainActivity? = null
+    private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
+        val addFragmentButton = findViewById<Button>(R.id.nextQuestion)
 
-// Crea un'istanza del tuo fragment
-        val myFragment = FirstQuestionFragment()
+        //Aggiungi il fragment dell'About
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragmentContainer, FirstQuestionFragment())
+            .commit()
 
-// Aggiungi il fragment al container
-        fragmentTransaction.add(R.id.fragmentContainer, myFragment)
-// Oppure sostituisci il fragment esistente
-// fragmentTransaction.replace(R.id.fragment_container, myFragment)
 
-        fragmentTransaction.commit()
+        addFragmentButton.setOnClickListener {
+
+            //Aggiungi il fragment dei Contacts
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.fragmentContainer, SecondQuestionFragment())
+                .addToBackStack(null)
+                .commit()
+
+        }
     }
 }

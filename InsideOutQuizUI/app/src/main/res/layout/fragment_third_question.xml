@@ -19,7 +19,7 @@
             android:background="#80FF0000"
             android:gravity="center"
             android:paddingVertical="30dp"
-            android:text="@string/question2"
+            android:text="@string/question3"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q2_answer1" />
+                android:text="@string/q3_answer1" />
 
             <Button
                 android:id="@+id/answer2"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q2_answer2" />
+                android:text="@string/q3_answer2" />
 
             <Button
                 android:id="@+id/answer3"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q2_answer3" />
+                android:text="@string/q3_answer3" />
 
             <Button
                 android:id="@+id/answer4"
@@ -67,11 +67,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_button_background"
-                android:text="@string/q2_answer4" />
+                android:text="@string/q3_answer4" />
 
 
         </LinearLayout>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
